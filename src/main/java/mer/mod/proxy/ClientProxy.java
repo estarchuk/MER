@@ -1,9 +1,10 @@
 package mer.mod.proxy;
 
-public class ClientProxy {
+import mer.mod.init.ModBlocks;
+
+public class ClientProxy implements CommonProxy {
 
     @Override
     public void init() {
-        ModItems.registerRenders();
         ModBlocks.registerRenders();
 }}
