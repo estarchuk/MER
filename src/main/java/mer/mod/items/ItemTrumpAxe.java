@@ -1,6 +1,9 @@
 package mer.mod.items;
 
-public class ItemTrumpAxe extends ItemAxe{
+import mer.mod.Reference;
+import net.minecraft.item.ItemAxe;
+
+public class ItemTrumpAxe extends ItemAxe {
 
     public ItemTrumpAxe(item.ToolMaterial material){
         super(material);

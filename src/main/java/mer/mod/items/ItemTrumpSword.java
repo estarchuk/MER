@@ -1,6 +1,10 @@
 package mer.mod.items;
 
-public class ItemTrumpSword  extends ItemSword{
+import mer.mod.Reference;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
+
+public class ItemTrumpSword  extends ItemSword {
 
     public ItemTrumpSword(Item.ToolMaterial material){
         super(material);
