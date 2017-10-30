@@ -11,16 +11,20 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 
     public static Block cement;
+    public static Block trumpiumore;
 
     public static void init() {
         cement = new BlockCement();
+        trumpiumore = new BlockTrumpiumOre();
     }
     public static void register() {
         registerBlock(cement);
+        registerBlock(trumpiumore);
     }
 
     public static void registerRenders() {
         registerRender(cement);
+        registerRender(trumpiumore);
     }
 
     private static void registerBlock(Block block) {

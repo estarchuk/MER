@@ -11,7 +11,8 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "mer.mod.proxy.ServerProxyClass";
 
     public static enum ModBlocks{
-        CEMENT("cementblock", "BlockCement");
+        CEMENT("cementblock", "BlockCement"),
+        TRUMPIUMORE("trumpiumore", "BlockTrumpiumOre");
 
         private String unlocalizedName;
         private String registryName;
@@ -26,6 +27,26 @@ public class Reference {
 
         }
 
+        public String getRegistryName() {
+            return registryName;
+        }
+    }
+
+    public static enum ModItems{
+        TRUMPSWORD("trumpsword", "ItemTrumpSword");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        ModItems(String unlocalizedName, String registryName){
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalizedName(){
+            return unlocalizedName;
+
+        }
         public String getRegistryName() {
             return registryName;
         }
