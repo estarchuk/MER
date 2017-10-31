@@ -11,8 +11,8 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "mer.mod.proxy.ServerProxyClass";
 
     public static enum ModBlocks{
-        CEMENT("cementblock", "BlockCement"),
-        TRUMPIUMORE("trumpiumore", "BlockTrumpiumOre");
+        CEMENT("cement", "BlockCement"),
+        TRUMPIUMORE("trumpiumore", "BlockTrumpiumore");
 
         private String unlocalizedName;
         private String registryName;
@@ -34,7 +34,10 @@ public class Reference {
 
     public static enum ModItems{
         TRUMPSWORD("trumpsword", "ItemTrumpSword"),
-        TRUMPAXE("trumpaxe", "ItemTrumpAxe");
+        TRUMPAXE("trumpaxe", "ItemTrumpAxe"),
+        TRUMPHOE("trumphoe", "ItemTrumpHoe"),
+        TRUMPPICKAXE("trumppickaxe", "ItemTrumpPickaxe"),
+        TRUMPSPADE("trumpspade", "ItemTrumpSpade");
 
         private String unlocalizedName;
         private String registryName;

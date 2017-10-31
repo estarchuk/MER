@@ -17,7 +17,7 @@ public class ModItems {
 
     public static void init() {
         trumpsword = new ItemTrumpSword(trumptool);
-        trumpaxe = new ItemTrumpAxe(trumptool);
+        trumpaxe = new ItemTrumpAxe(trumptool, 8, 1.2F);
     }
     public static void register() {
         GameRegistry.register(trumpsword);

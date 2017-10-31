@@ -9,6 +9,6 @@ public class ItemTrumpHoe extends ItemHoe{
     public ItemTrumpHoe (Item.ToolMaterial material){
         super(material);
         setUnlocalizedName(Reference.ModItems.TRUMPHOE.getUnlocalizedName());
-        setRRegistryName(Reference.ModItems.TRUMPHOE.getRegistryName());
+        setRegistryName(Reference.ModItems.TRUMPHOE.getRegistryName());
     }
 }
