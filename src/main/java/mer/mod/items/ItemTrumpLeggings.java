@@ -1,5 +1,7 @@
 package mer.mod.items;
 
+import mer.mod.Reference;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 
 public class ItemTrumpLeggings extends ItemArmor{

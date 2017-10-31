@@ -37,7 +37,11 @@ public class Reference {
         TRUMPAXE("trumpaxe", "ItemTrumpAxe"),
         TRUMPHOE("trumphoe", "ItemTrumpHoe"),
         TRUMPPICKAXE("trumppickaxe", "ItemTrumpPickaxe"),
-        TRUMPSPADE("trumpspade", "ItemTrumpSpade");
+        TRUMPSPADE("trumpspade", "ItemTrumpSpade"),
+        TRUMPHELMET("trumphelmet", "ItemTrumpHelmet"),
+        TRUMPCHESTPLATE("trumpchestplate", "ItemTrumpChestplate"),
+        TRUMPLEGGINGS("trumpleggings", "ItemTrumpLeggings"),
+        TRUMPBOOTS("trumpboots", "ItemTrumpBoots");
 
         private String unlocalizedName;
         private String registryName;
