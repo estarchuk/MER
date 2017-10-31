@@ -2,6 +2,7 @@ package mer.mod.init;
 
 import mer.mod.items.ItemTrumpAxe;
 import mer.mod.items.ItemTrumpGem;
+import mer.mod.items.ItemTrumpHoe;
 import mer.mod.items.ItemTrumpSword;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -16,22 +17,26 @@ public class ModItems {
     public static Item trumpsword;
     public static Item trumpaxe;
     public static Item trumpgem;
+    public static Item trumphoe;
 
     public static void init() {
         trumpsword = new ItemTrumpSword(trumptool);
         trumpaxe = new ItemTrumpAxe(trumptool, 8, 1.2F);
         trumpgem = new ItemTrumpGem();
+        trumphoe = new ItemTrumpHoe(trumptool);
     }
     public static void register() {
         GameRegistry.register(trumpsword);
         GameRegistry.register(trumpaxe);
         GameRegistry.register(trumpgem);
+        GameRegistry.register(trumphoe);
     }
 
     public static void registerRenders() {
         registerRender(trumpsword);
         registerRender(trumpaxe);
         registerRender(trumpgem);
+        registerRender(trumphoe);
     }
 
 

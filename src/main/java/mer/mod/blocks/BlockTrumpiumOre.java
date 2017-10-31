@@ -8,7 +8,7 @@ public class BlockTrumpiumOre extends Block {
 
     public BlockTrumpiumOre(){
         super(Material.ROCK);
-
+        setHardness(60);
         setUnlocalizedName(Reference.ModBlocks.TRUMPIUMORE.getUnlocalizedName());
         setRegistryName(Reference.ModBlocks.TRUMPIUMORE.getRegistryName());
 
