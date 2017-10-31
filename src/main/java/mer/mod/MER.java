@@ -29,6 +29,8 @@ public class MER {
         System.out.println("Pre Init");
         ModBlocks.init();
         ModBlocks.register();
+        ModItems.init();
+        ModItems.register();
     }
 
     @Mod.EventHandler

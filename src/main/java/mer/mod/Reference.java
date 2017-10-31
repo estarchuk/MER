@@ -33,7 +33,8 @@ public class Reference {
     }
 
     public static enum ModItems{
-        TRUMPSWORD("trumpsword", "ItemTrumpSword");
+        TRUMPSWORD("trumpsword", "ItemTrumpSword"),
+        TRUMPAXE("trumpaxe", "ItemTrumpAxe");
 
         private String unlocalizedName;
         private String registryName;
