@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "demjr:items/trumpsword"
+    "layer0": "mer:items/trumpsword"
   }
 }

@@ -11,8 +11,8 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "mer.mod.proxy.ServerProxyClass";
 
     public static enum ModBlocks{
-        CEMENT("cement", "BlockCement"),
-        TRUMPIUMORE("trumpiumore", "BlockTrumpiumore");
+        CEMENT("cement", "blockcement"),
+        TRUMPIUMORE("trumpiumore", "blocktrumpiumore");
 
         private String unlocalizedName;
         private String registryName;
@@ -33,15 +33,15 @@ public class Reference {
     }
 
     public static enum ModItems{
-        TRUMPSWORD("trumpsword", "ItemTrumpSword"),
-        TRUMPAXE("trumpaxe", "ItemTrumpAxe"),
-        TRUMPHOE("trumphoe", "ItemTrumpHoe"),
-        TRUMPPICKAXE("trumppickaxe", "ItemTrumpPickaxe"),
-        TRUMPSPADE("trumpspade", "ItemTrumpSpade"),
-        TRUMPHELMET("trumphelmet", "ItemTrumpHelmet"),
-        TRUMPCHESTPLATE("trumpchestplate", "ItemTrumpChestplate"),
-        TRUMPLEGGINGS("trumpleggings", "ItemTrumpLeggings"),
-        TRUMPBOOTS("trumpboots", "ItemTrumpBoots");
+        TRUMPSWORD("trumpsword", "itemtrumpsword"),
+        TRUMPAXE("trumpaxe", "itemtrumpaxe"),
+        TRUMPHOE("trumphoe", "itemtrumphoe"),
+        TRUMPPICKAXE("trumppickaxe", "itemtrumppickaxe"),
+        TRUMPSPADE("trumpspade", "itemtrumpspade"),
+        TRUMPHELMET("trumphelmet", "itemtrumphelmet"),
+        TRUMPCHESTPLATE("trumpchestplate", "itemtrumpchestplate"),
+        TRUMPLEGGINGS("trumpleggings", "itemtrumpleggings"),
+        TRUMPBOOTS("trumpboots", "itemtrumpboots");
 
         private String unlocalizedName;
         private String registryName;
