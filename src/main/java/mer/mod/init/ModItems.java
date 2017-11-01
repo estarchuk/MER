@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
     public static Item.ToolMaterial trumptool = EnumHelper.addToolMaterial("trump", 10, 2000, 15F, 15F, 10);
-    public static ItemArmor.ArmorMaterial trumparmor = EnumHelper.addArmorMaterial("trump", "demjr:trump", 35, new int[]{3, 6, 8, 3}, 20, null, 3.0F);
+    public static ItemArmor.ArmorMaterial trumparmor = EnumHelper.addArmorMaterial("trump", "mer:trump", 35, new int[]{3, 6, 8, 3}, 20, null, 3.0F);
 
     public static Item trumpsword;
     public static Item trumpaxe;
