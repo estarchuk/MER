@@ -42,7 +42,8 @@ public class Reference {
         TRUMPCHESTPLATE("trumpchestplate", "itemtrumpchestplate"),
         TRUMPLEGGINGS("trumpleggings", "itemtrumpleggings"),
         TRUMPBOOTS("trumpboots", "itemtrumpboots"),
-        TRUMPGEM("trumpgem", "itemtrumpgem");
+        TRUMPGEM("trumpgem", "itemtrumpgem"),
+        TRUMPPICKAXE("trumppickaxe", "itemtrumppickaxe");
 
         private String unlocalizedName;
         private String registryName;
