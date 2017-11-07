@@ -12,19 +12,23 @@ public class ModBlocks {
 
     public static Block cement;
     public static Block trumpiumore;
+    public static Block trumpiumblock;
 
     public static void init() {
         cement = new BlockCement();
         trumpiumore = new BlockTrumpiumOre();
+        trumpiumblock = new BlockTrumpiumBlock();
     }
     public static void register() {
         registerBlock(cement);
         registerBlock(trumpiumore);
+        registerBlock(trumpiumblock);
     }
 
     public static void registerRenders() {
         registerRender(cement);
         registerRender(trumpiumore);
+        registerRender(trumpiumblock);
     }
 
     private static void registerBlock(Block block) {
