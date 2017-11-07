@@ -37,7 +37,6 @@ public class Reference {
         TRUMPSWORD("trumpsword", "itemtrumpsword"),
         TRUMPAXE("trumpaxe", "itemtrumpaxe"),
         TRUMPHOE("trumphoe", "itemtrumphoe"),
-        TRUMPPICK("trumppick", "itemtrumppick"),
         TRUMPSPADE("trumpspade", "itemtrumpspade"),
         TRUMPHELMET("trumphelmet", "itemtrumphelmet"),
         TRUMPCHESTPLATE("trumpchestplate", "itemtrumpchestplate"),
