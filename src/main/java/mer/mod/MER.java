@@ -31,7 +31,6 @@ public class MER {
         ModBlocks.register();
         ModItems.init();
         ModItems.register();
-        ModCrafting.register();
     }
 
     @Mod.EventHandler
