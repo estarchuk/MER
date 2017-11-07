@@ -31,12 +31,13 @@ public class Reference {
             return registryName;
         }
     }
+    
 
     public static enum ModItems{
         TRUMPSWORD("trumpsword", "itemtrumpsword"),
         TRUMPAXE("trumpaxe", "itemtrumpaxe"),
         TRUMPHOE("trumphoe", "itemtrumphoe"),
-        TRUMPPICKAXE("trumppickaxe", "itemtrumppickaxe"),
+        TRUMPPICK("trumppick", "itemtrumppick"),
         TRUMPSPADE("trumpspade", "itemtrumpspade"),
         TRUMPHELMET("trumphelmet", "itemtrumphelmet"),
         TRUMPCHESTPLATE("trumpchestplate", "itemtrumpchestplate"),
