@@ -1,5 +1,6 @@
 package mer.mod.blocks;
 
+import mer.mod.MER;
 import mer.mod.Reference;
 import mer.mod.init.ModBlocks;
 import mer.mod.init.ModItems;
@@ -20,6 +21,7 @@ public class BlockTrumpiumOre extends Block {
         setHardness(60);
         setUnlocalizedName(Reference.ModBlocks.TRUMPIUMORE.getUnlocalizedName());
         setRegistryName(Reference.ModBlocks.TRUMPIUMORE.getRegistryName());
+        setCreativeTab(MER.CREATIVE_TAB);
     }
 
     @Nullable

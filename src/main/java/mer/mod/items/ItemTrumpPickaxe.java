@@ -1,5 +1,6 @@
 package mer.mod.items;
 
+import mer.mod.MER;
 import mer.mod.Reference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
@@ -10,5 +11,6 @@ public class ItemTrumpPickaxe extends ItemPickaxe {
         super(material);
         setUnlocalizedName(Reference.ModItems.TRUMPPICKAXE.getUnlocalizedName());
         setRegistryName(Reference.ModItems.TRUMPPICKAXE.getRegistryName());
+        setCreativeTab(MER.CREATIVE_TAB);
     }
 }
