@@ -3,9 +3,8 @@ package mer.mod;
 import mer.mod.init.ModBlocks;
 import mer.mod.init.ModCrafting;
 import mer.mod.init.ModItems;
-import mer.mod.init.ModSmelting;
 import mer.mod.proxy.CommonProxy;
-import net.minecraft.creativetab.CreativeTabs;
+import mer.mod.world.WorldGen;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,6 +21,7 @@ public class MER {
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
+    public static int dimId = 2;
 
 
     @Mod.EventHandler
@@ -37,6 +37,8 @@ public class MER {
     public void init(FMLInitializationEvent event) {
         System.out.println("Init");
         proxy.init();
+        ModCrafting.register();
+        GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 
     @Mod.EventHandler
