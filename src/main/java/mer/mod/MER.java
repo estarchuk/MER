@@ -5,6 +5,7 @@ import mer.mod.init.ModCrafting;
 import mer.mod.init.ModItems;
 import mer.mod.proxy.CommonProxy;
 import mer.mod.world.WorldGen;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,6 +24,7 @@ public class MER {
     public static CommonProxy proxy;
     public static int dimId = 2;
 
+    public static final CreativeTabs CREATIVE_TAB = new MERTab();
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
