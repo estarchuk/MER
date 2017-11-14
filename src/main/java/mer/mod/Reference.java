@@ -33,7 +33,26 @@ public class Reference {
             return registryName;
         }
     }
-    
+
+    public static enum ModEntities {
+        BROWNZOMBIE("brownzombie", "entitybrownzombie");
+
+
+        private String unlocalizedName;
+        private String registryName;
+
+        ModEntities(String unlocalizedName, String registryName) {
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getRegistryName() {
+            return registryName;
+        }
+        public String getUnlocalizedName(){
+            return unlocalizedName;
+        }
+    }
 
     public static enum ModItems{
         TRUMPSWORD("trumpsword", "itemtrumpsword"),

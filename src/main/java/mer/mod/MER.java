@@ -2,6 +2,7 @@ package mer.mod;
 
 import mer.mod.init.ModBlocks;
 import mer.mod.init.ModCrafting;
+import mer.mod.init.ModEntities;
 import mer.mod.init.ModItems;
 import mer.mod.proxy.CommonProxy;
 import mer.mod.world.WorldGen;
@@ -22,7 +23,6 @@ public class MER {
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
-    public static int dimId = 2;
 
     public static final CreativeTabs CREATIVE_TAB = new MERTab();
 
@@ -33,6 +33,8 @@ public class MER {
         ModBlocks.register();
         ModItems.init();
         ModItems.register();
+        ModEntities.init();
+        ModEntities.initModels();
     }
 
     @Mod.EventHandler
