@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "name":"mer:entitybrownzombie",
+      "name":"mer:brownzombie",
       "rolls": 1,
       "entries": [
         {

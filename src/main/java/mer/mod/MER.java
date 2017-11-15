@@ -7,6 +7,8 @@ import mer.mod.init.ModItems;
 import mer.mod.proxy.CommonProxy;
 import mer.mod.world.WorldGen;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

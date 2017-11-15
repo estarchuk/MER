@@ -23,7 +23,7 @@ public class EntityBrownZombie extends EntityMob {
 
     private static final DataParameter<Boolean> ARMS_RAISED = EntityDataManager.createKey(EntityBrownZombie.class, DataSerializers.BOOLEAN);
 
-    public static final ResourceLocation LOOT = new ResourceLocation("mer:brownzombie");
+    public static final ResourceLocation LOOT = new ResourceLocation("mer:entities/brownzombie");
 
     public EntityBrownZombie(World worldIn){
         super(worldIn);
