@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "name":"mer:trump",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mer:itemtrumphelmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {"type": "item",
+        "name": "mer:itemtrumpchestplate",
+        "weight": 1,
+        "functions": [
+          {
+          "function": "set_count",
+          "count":{
+            "min": 1,
+            "max": 1
+          }
+        }
+        ]
+        }
+      ]
+    }
+  ]
+}

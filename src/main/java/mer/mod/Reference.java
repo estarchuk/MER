@@ -35,8 +35,8 @@ public class Reference {
     }
 
     public static enum ModEntities {
-        BROWNZOMBIE("brownzombie", "entitybrownzombie");
-
+        BROWNZOMBIE("brownzombie", "entitybrownzombie"),
+        TRUMP("trump", "entitytrump");
 
         private String unlocalizedName;
         private String registryName;
