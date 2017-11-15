@@ -12,3 +12,5 @@ item.trumpchestplate.name=Trump Chestplate
 item.trumpboots.name=Trump Boots
 item.trumphelmet.name=Trump Helmet
 itemGroup.tabMER=MER Tab
+entity.brownzombie.name=Brown Zombie
+entity.trump.name=The Donald
