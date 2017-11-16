@@ -13,8 +13,7 @@ public class Reference {
     public static enum ModBlocks{
         CEMENT("cement", "blockcement"),
         TRUMPIUMORE("trumpiumore", "blocktrumpiumore"),
-        TRUMPIUMBLOCK("trumpiumblock", "blocktrumpiumblock"),
-        TRUMPPORTAL("trumpportal", "blocktrumpportal");
+        TRUMPIUMBLOCK("trumpiumblock", "blocktrumpiumblock");
 
         private String unlocalizedName;
         private String registryName;
@@ -36,7 +35,8 @@ public class Reference {
 
     public static enum ModEntities {
         BROWNZOMBIE("brownzombie", "entitybrownzombie"),
-        TRUMP("trump", "entitytrump");
+        TRUMP("trump", "entitytrump"),
+        ZOMBIEWOLF("zombiewolf", "entityzombiewolf");
 
         private String unlocalizedName;
         private String registryName;

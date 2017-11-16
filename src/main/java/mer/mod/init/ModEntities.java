@@ -2,10 +2,7 @@ package mer.mod.init;
 
 import mer.mod.MER;
 import mer.mod.Reference;
-import mer.mod.entities.EntityBrownZombie;
-import mer.mod.entities.EntityTrump;
-import mer.mod.entities.RenderBrownZombie;
-import mer.mod.entities.RenderTrump;
+import mer.mod.entities.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
@@ -28,12 +25,17 @@ public class ModEntities {
         EntityRegistry.registerModEntity(new ResourceLocation("trump"), EntityTrump.class, Reference.ModEntities.TRUMP.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
         EntityRegistry.addSpawn(EntityTrump.class, 1, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
         LootTableList.register(EntityTrump.LOOT);
+        //
+        EntityRegistry.registerModEntity(new ResourceLocation("zombiewolf"), EntityZombieWolf.class, Reference.ModEntities.ZOMBIEWOLF.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
+        EntityRegistry.addSpawn(EntityZombieWolf.class, 100, 2, 5, EnumCreatureType.AMBIENT, Biomes.FOREST);
+        LootTableList.register(EntityZombieWolf.LOOT);
     }
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         RenderingRegistry.registerEntityRenderingHandler(EntityBrownZombie.class, RenderBrownZombie.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityTrump.class, RenderTrump.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityZombieWolf.class, RenderZombieWolf.FACTORY);
     }
 }
 
