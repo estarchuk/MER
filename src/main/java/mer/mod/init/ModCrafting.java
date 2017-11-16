@@ -16,6 +16,7 @@ public class ModCrafting {
             GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumppickaxe), "TTT", " S ", " S ", 'T', ModBlocks.trumpiumblock, 'S', Items.STICK);
             GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumphoe), "TT ", " S ", " S ", 'T', ModBlocks.trumpiumblock, 'S', Items.STICK);
             GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumpspade), " T ", " S ", " S ", 'T', ModBlocks.trumpiumblock, 'S', Items.STICK);
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.dough), Items.WHEAT, ModItems.salt, Items.WATER_BUCKET);
         }
 
 }
