@@ -65,6 +65,8 @@ public class Reference {
         TRUMPBOOTS("trumpboots", "itemtrumpboots"),
         TRUMPGEM("trumpgem", "itemtrumpgem"),
         TRUMPPICKAXE("trumppickaxe", "itemtrumppickaxe"),
+        SALT("salt", "itemsalt"),
+        DOUGH("dough", "itemdough"),
         PEROGIE("perogie", "itemperogie");
 
         private String unlocalizedName;

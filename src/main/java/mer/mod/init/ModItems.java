@@ -24,6 +24,8 @@ public class ModItems {
     public static Item trumphoe;
     public static Item trumpspade;
     public static Item trumppickaxe;
+    public static Item salt;
+    public static Item dough;
     public static Item perogie;
 
     public static void init() {
@@ -37,6 +39,8 @@ public class ModItems {
         trumpchestplate = new ItemTrumpChestplate(trumparmor, 1, EntityEquipmentSlot.CHEST);
         trumpleggings = new ItemTrumpLeggings(trumparmor, 2, EntityEquipmentSlot.LEGS);
         trumppickaxe = new ItemTrumpPickaxe(trumptool);
+        salt = new ItemSalt();
+        dough = new ItemDough();
         perogie = new ItemPerogie();
     }
     public static void register() {
@@ -50,6 +54,8 @@ public class ModItems {
         GameRegistry.register(trumpboots);
         GameRegistry.register(trumpspade);
         GameRegistry.register(trumppickaxe);
+        GameRegistry.register(salt);
+        GameRegistry.register(dough);
         GameRegistry.register(perogie);
     }
 
@@ -64,6 +70,8 @@ public class ModItems {
         registerRender(trumpboots);
         registerRender(trumpspade);
         registerRender(trumppickaxe);
+        registerRender(salt);
+        registerRender(dough);
         registerRender(perogie);
     }
 
