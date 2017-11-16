@@ -19,7 +19,7 @@ public class RenderTrump extends RenderLiving<EntityTrump> {
     public static final Factory FACTORY = new Factory();
 
     public RenderTrump(RenderManager renderManagerIn){
-        super(renderManagerIn, new ModelPlayer(1.0F, false), 0.5F);
+        super(renderManagerIn, new ModelPlayer(0.10F, false), 0.5F);
     }
 
     @Override
