@@ -5,6 +5,7 @@ import mer.mod.Reference;
 import mer.mod.entities.EntityBrownZombie;
 import mer.mod.entities.EntityTrump;
 import mer.mod.entities.RenderBrownZombie;
+import mer.mod.entities.RenderTrump;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
@@ -32,6 +33,7 @@ public class ModEntities {
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         RenderingRegistry.registerEntityRenderingHandler(EntityBrownZombie.class, RenderBrownZombie.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityTrump.class, RenderTrump.FACTORY);
     }
 }
 

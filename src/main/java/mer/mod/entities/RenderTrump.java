@@ -1,5 +1,6 @@
 package mer.mod.entities;
 
+import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelPlayer;
 import net.minecraft.client.model.ModelZombie;
 import net.minecraft.client.renderer.entity.Render;
@@ -11,25 +12,25 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 import javax.annotation.Nonnull;
 
 
-public class RenderTrump extends RenderLiving<EntityBrownZombie> {
+public class RenderTrump extends RenderLiving<EntityTrump> {
 
     private ResourceLocation mobTexture = new ResourceLocation("mer:textures/entity/trump.png");
 
     public static final Factory FACTORY = new Factory();
 
     public RenderTrump(RenderManager renderManagerIn){
-        super(renderManagerIn, new ModelPlayer(2.0F, true), 0.5F);
+        super(renderManagerIn, new ModelPlayer(1.0F, false), 0.5F);
     }
 
     @Override
     @Nonnull
-    protected ResourceLocation getEntityTexture(@Nonnull EntityBrownZombie entity){
+    protected ResourceLocation getEntityTexture(@Nonnull EntityTrump entity){
         return mobTexture;
     }
 
-    public static final class Factory implements IRenderFactory<EntityBrownZombie>{
+    public static final class Factory implements IRenderFactory<EntityTrump>{
         @Override
-        public Render<? super EntityBrownZombie> createRenderFor(RenderManager manager){
+        public Render<? super EntityTrump> createRenderFor(RenderManager manager){
             return new RenderTrump(manager);
         }
     }
