@@ -1,7 +1,6 @@
 package mer.mod.entities;
 
 import net.minecraft.client.model.ModelWolf;
-import net.minecraft.client.model.ModelZombie;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;

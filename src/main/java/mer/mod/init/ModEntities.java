@@ -18,15 +18,15 @@ public class ModEntities {
     public static void init(){
 
         int id = 1;
-        EntityRegistry.registerModEntity(new ResourceLocation("brownzombie"), EntityBrownZombie.class, Reference.ModEntities.BROWNZOMBIE.getUnlocalizedName(), id++, MER.instance, 64, 3, true, 0x996600, 0x00ff00);
+        EntityRegistry.registerModEntity(new ResourceLocation("mer:brownzombie"), EntityBrownZombie.class, Reference.ModEntities.BROWNZOMBIE.getUnlocalizedName(), id++, MER.instance, 64, 3, true, 0x996600, 0x00ff00);
         EntityRegistry.addSpawn(EntityBrownZombie.class, 100, 25, 27, EnumCreatureType.MONSTER, Biomes.PLAINS, Biomes.DESERT);
         LootTableList.register(EntityBrownZombie.LOOT);
         //
-        EntityRegistry.registerModEntity(new ResourceLocation("trump"), EntityTrump.class, Reference.ModEntities.TRUMP.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
+        EntityRegistry.registerModEntity(new ResourceLocation("mer:trump"), EntityTrump.class, Reference.ModEntities.TRUMP.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
         EntityRegistry.addSpawn(EntityTrump.class, 1, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
         LootTableList.register(EntityTrump.LOOT);
         //
-        EntityRegistry.registerModEntity(new ResourceLocation("zombiewolf"), EntityZombieWolf.class, Reference.ModEntities.ZOMBIEWOLF.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
+        EntityRegistry.registerModEntity(new ResourceLocation("mer:zombiewolf"), EntityZombieWolf.class, Reference.ModEntities.ZOMBIEWOLF.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
         EntityRegistry.addSpawn(EntityZombieWolf.class, 100, 2, 5, EnumCreatureType.AMBIENT, Biomes.FOREST);
         LootTableList.register(EntityZombieWolf.LOOT);
     }
