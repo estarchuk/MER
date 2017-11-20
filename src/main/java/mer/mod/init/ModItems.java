@@ -25,6 +25,9 @@ public class ModItems {
     public static Item trumpspade;
     public static Item trumppickaxe;
     public static Item salt;
+    public static Item butter;
+    public static Item toast;
+    public static Item butteredtoast;
     public static Item dough;
     public static Item perogie;
 
@@ -40,6 +43,9 @@ public class ModItems {
         trumpleggings = new ItemTrumpLeggings(trumparmor, 2, EntityEquipmentSlot.LEGS);
         trumppickaxe = new ItemTrumpPickaxe(trumptool);
         salt = new ItemSalt();
+        butter = new ItemButter();
+        toast = new ItemToast();
+        butteredtoast = new ItemButteredToast();
         dough = new ItemDough();
         perogie = new ItemPerogie();
     }
@@ -55,6 +61,9 @@ public class ModItems {
         GameRegistry.register(trumpspade);
         GameRegistry.register(trumppickaxe);
         GameRegistry.register(salt);
+        GameRegistry.register(butter);
+        GameRegistry.register(toast);
+        GameRegistry.register(butteredtoast);
         GameRegistry.register(dough);
         GameRegistry.register(perogie);
     }
@@ -71,6 +80,9 @@ public class ModItems {
         registerRender(trumpspade);
         registerRender(trumppickaxe);
         registerRender(salt);
+        registerRender(butter);
+        registerRender(toast);
+        registerRender(butteredtoast);
         registerRender(dough);
         registerRender(perogie);
     }

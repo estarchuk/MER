@@ -67,6 +67,9 @@ public class Reference {
         TRUMPGEM("trumpgem", "itemtrumpgem"),
         TRUMPPICKAXE("trumppickaxe", "itemtrumppickaxe"),
         SALT("salt", "itemsalt"),
+        BUTTER("butter", "itembutter"),
+        TOAST("toast", "itemtoast"),
+        BUTTEREDTOAST("butteredtoast", "itembutteredtoast"),
         DOUGH("dough", "itemdough"),
         PEROGIE("perogie", "itemperogie");
 
