@@ -1,9 +1,6 @@
 package mer.mod;
 
-import mer.mod.init.ModBlocks;
-import mer.mod.init.ModCrafting;
-import mer.mod.init.ModEntities;
-import mer.mod.init.ModItems;
+import mer.mod.init.*;
 import mer.mod.proxy.CommonProxy;
 import mer.mod.world.WorldGen;
 import net.minecraft.creativetab.CreativeTabs;
@@ -44,6 +41,7 @@ public class MER {
         System.out.println("Init");
         proxy.init();
         ModCrafting.register();
+        ModSmelting.register();
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 
