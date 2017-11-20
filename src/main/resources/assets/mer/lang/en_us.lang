@@ -16,6 +16,6 @@ item.salt.name=Salt
 item.dough.name=Dough
 item.perogie.name=Perogie
 itemGroup.tabMER=MER Tab
-entity.brownzombie.name=Brown Zombie
+entity.maskedzombie.name=Masked Zombie
 entity.zombiewolf.name=Zombie Wolf
 entity.trump.name=The Donald

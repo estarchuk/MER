@@ -35,7 +35,7 @@ public class Reference {
     }
 
     public static enum ModEntities {
-        BROWNZOMBIE("brownzombie", "entitybrownzombie"),
+        MASKEDZOMBIE("maskedzombie", "entitymaskedzombie"),
         TRUMP("trump", "entitytrump"),
         ZOMBIEWOLF("zombiewolf", "entityzombiewolf");
 

@@ -19,13 +19,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class EntityBrownZombie extends EntityMob {
+public class EntityMaskedZombie extends EntityMob {
 
-    private static final DataParameter<Boolean> ARMS_RAISED = EntityDataManager.createKey(EntityBrownZombie.class, DataSerializers.BOOLEAN);
+    private static final DataParameter<Boolean> ARMS_RAISED = EntityDataManager.createKey(EntityMaskedZombie.class, DataSerializers.BOOLEAN);
 
-    public static final ResourceLocation LOOT = new ResourceLocation("mer:entities/brownzombie");
+    public static final ResourceLocation LOOT = new ResourceLocation("mer:entities/maskedzombie");
 
-    public EntityBrownZombie(World worldIn){
+    public EntityMaskedZombie(World worldIn){
         super(worldIn);
         setSize(0.6F, 1.95F);
     }
@@ -60,7 +60,7 @@ public class EntityBrownZombie extends EntityMob {
     @Override
     protected void initEntityAI() {
         this.tasks.addTask(0, new EntityAISwimming(this));
-        this.tasks.addTask(2, new EntityAIBrownZombieAttack(this, 1.0D, false));
+        this.tasks.addTask(2, new EntityAIMaskedZombieAttack(this, 1.0D, false));
         this.tasks.addTask(5, new EntityAIMoveTowardsRestriction(this, 1.0D));
         this.tasks.addTask(7, new EntityAIWander(this, 1.0D));
         this.tasks.addTask(8, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
