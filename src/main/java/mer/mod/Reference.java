@@ -11,6 +11,7 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "mer.mod.proxy.ServerProxyClass";
 
     public static enum ModBlocks{
+        SALT("salt", "blocksalt"),
         CEMENT("cement", "blockcement"),
         TRUMPIUMORE("trumpiumore", "blocktrumpiumore"),
         TRUMPIUMBLOCK("trumpiumblock", "blocktrumpiumblock");
