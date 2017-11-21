@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
+    //Like ModBlocks, this class creates all the items (food, armor, tools, etc.) along with any tool material to be used in the mod.
+
     public static Item.ToolMaterial trumptool = EnumHelper.addToolMaterial("trump", 10, 2000, 15F, 15F, 10);
     public static ItemArmor.ArmorMaterial trumparmor = EnumHelper.addArmorMaterial("trump", "mer:trump", 35, new int[]{3, 6, 8, 3}, 20, null, 3.0F);
 
@@ -50,6 +52,9 @@ public class ModItems {
         perogie = new ItemPerogie();
     }
     public static void register() {
+
+        //This bit registers any item into Minecraft so it can be found by the main game
+
         GameRegistry.register(trumpsword);
         GameRegistry.register(trumpaxe);
         GameRegistry.register(trumpgem);
@@ -69,6 +74,9 @@ public class ModItems {
     }
 
     public static void registerRenders() {
+
+        //This bit just registers the items 3d renders which are controlled by .json files in the "models" resource file
+
         registerRender(trumpsword);
         registerRender(trumpaxe);
         registerRender(trumpgem);
@@ -89,6 +97,8 @@ public class ModItems {
 
 
     private static void registerRender(Item item) {
+
+        //This registers the items texture for when it is in the inventory of a player.
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 

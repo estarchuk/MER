@@ -18,7 +18,7 @@ public class BlockSalt extends Block {
 
     public BlockSalt(){
         super(Material.ROCK);
-        setHardness(25);
+        setHardness(10);
         setUnlocalizedName(Reference.ModBlocks.SALT.getUnlocalizedName());
         setRegistryName(Reference.ModBlocks.SALT.getRegistryName());
         setCreativeTab(MER.CREATIVE_TAB);

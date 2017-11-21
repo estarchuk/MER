@@ -16,6 +16,8 @@ public class ModEntities {
 
     public static void init(){
 
+        //This bit of the ModEntities is what registers the Entity into Minecraft, and sets stuff like spawning and loot drops up.
+
         int id = 1;
         EntityRegistry.registerModEntity(new ResourceLocation("mer:maskedzombie"), EntityMaskedZombie.class, Reference.ModEntities.MASKEDZOMBIE.getUnlocalizedName(), id++, MER.instance, 64, 3, true, 0x996600, 0x00ff00);
         EntityRegistry.addSpawn(EntityMaskedZombie.class, 100, 25, 27, EnumCreatureType.MONSTER, Biomes.PLAINS, Biomes.DESERT);
@@ -32,6 +34,9 @@ public class ModEntities {
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
+
+        //This part just initializes the models for each entity into Minecraft.
+
         RenderingRegistry.registerEntityRenderingHandler(EntityMaskedZombie.class, RenderMaskedZombie.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityTrump.class, RenderTrump.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityZombieWolf.class, RenderZombieWolf.FACTORY);

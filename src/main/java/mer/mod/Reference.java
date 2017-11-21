@@ -10,11 +10,17 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "mer.mod.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "mer.mod.proxy.ServerProxyClass";
 
+    /*This is the Reference file. Everything and anything is referenced in here for their unlocalized and registry name
+    Without this file, stuff would break. Badly.
+     */
+
     public static enum ModBlocks{
         SALT("salt", "blocksalt"),
         CEMENT("cement", "blockcement"),
         TRUMPIUMORE("trumpiumore", "blocktrumpiumore"),
         TRUMPIUMBLOCK("trumpiumblock", "blocktrumpiumblock");
+
+        //The order of these strings is important. If one of them is in the wrong place, stuff breaks.
 
         private String unlocalizedName;
         private String registryName;

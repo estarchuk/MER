@@ -11,6 +11,8 @@ public class MERTab extends CreativeTabs {
         super("tabMER");
     }
 
+    //All this file really does is pick the icon for the custom creative tab.
+
     @Override
     public  ItemStack getTabIconItem() {
         return new ItemStack(ModItems.trumpgem);

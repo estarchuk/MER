@@ -7,6 +7,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModCrafting {
 
+    /*
+    This is the ModCrafting class. This class tells the main class which crafting recipes to initiate within Minecraft. The way this is laid out is weird, as
+    Minecraft uses a 3x3 grid to create the items. The "params" bit of code is what represents the grid. Each set of green double quotes is one row
+    of the crafting table. The first set is the top row, the second the middle row, and the third the bottom row.
+     */
+
         public static void register(){GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumpsword), " T ", " T ", " S ", 'T', ModBlocks.trumpiumblock, 'S', Items.STICK);
             GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumpaxe), "TT ", "TS ", " S ", 'T', ModBlocks.trumpiumblock, 'S', Items.STICK);
             GameRegistry.addShapedRecipe(new ItemStack(ModItems.trumpboots), "   ", "T T", "T T", 'T', ModBlocks.trumpiumblock);

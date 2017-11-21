@@ -21,14 +21,26 @@ import javax.annotation.Nullable;
 
 public class EntityMaskedZombie extends EntityMob {
 
+    /*
+    Here is one of the main attractions: a new mob in Minecraft. This one was really a test run to see if we could get a
+    mob working properly, so this is similar to a mob found on the internet. However, we did manage to gain understanding of why this
+    stuff works.
+     */
+
     private static final DataParameter<Boolean> ARMS_RAISED = EntityDataManager.createKey(EntityMaskedZombie.class, DataSerializers.BOOLEAN);
 
+    //This ARMS_RAISED boolean is needed so this zombie cannot hit someone many times in a second
+
     public static final ResourceLocation LOOT = new ResourceLocation("mer:entities/maskedzombie");
+
+    //This points to the loot table, which is stored in resources.
 
     public EntityMaskedZombie(World worldIn){
         super(worldIn);
         setSize(0.6F, 1.95F);
     }
+
+    //This decides how big the mob will be when it spawns in, and that it will spawn in the same world as the player
 
     @Override
     protected void entityInit() {
@@ -59,6 +71,7 @@ public class EntityMaskedZombie extends EntityMob {
 
     @Override
     protected void initEntityAI() {
+        //This sets up the mobs AI, such as how it will wander around, swim, attack, etc.
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(2, new EntityAIMaskedZombieAttack(this, 1.0D, false));
         this.tasks.addTask(5, new EntityAIMoveTowardsRestriction(this, 1.0D));
@@ -69,10 +82,11 @@ public class EntityMaskedZombie extends EntityMob {
     }
 
     private void applyEntityAI() {
+        //This bit sets up what the mob will attack and how it will react when attacked.
         this.tasks.addTask(6, new EntityAIMoveThroughVillage(this, 1.0D, false));
-        this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true, new Class[]{EntityPigZombie.class}));
-        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
+        this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true, new Class[]{EntityMaskedZombie.class}));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityVillager.class, false));
+        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityIronGolem.class, true));
     }
 

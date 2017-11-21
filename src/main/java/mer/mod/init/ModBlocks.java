@@ -10,6 +10,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 
+    /*This file creates all the blocks for the mod. Tells the main mod file to initialize the block itself, and then register
+    its model and renders.
+    */
+
     public static Block salt;
     public static Block cement;
     public static Block trumpiumore;

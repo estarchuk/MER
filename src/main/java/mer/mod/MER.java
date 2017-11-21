@@ -17,6 +17,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class MER {
 
+    /*
+    This is the main mod file. Despite basically tying everything, there is not a lot of code in here.
+    Normally just initializes stuff like models, crafting, entities, items, blocks, etc.
+     */
+
     @Mod.Instance
     public static MER instance;
 
