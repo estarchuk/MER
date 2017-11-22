@@ -15,6 +15,8 @@ public class ModItems {
 
     public static Item.ToolMaterial trumptool = EnumHelper.addToolMaterial("trump", 10, 2000, 15F, 15F, 10);
     public static ItemArmor.ArmorMaterial trumparmor = EnumHelper.addArmorMaterial("trump", "mer:trump", 35, new int[]{3, 6, 8, 3}, 20, null, 3.0F);
+    public static Item.ToolMaterial steeltool = EnumHelper.addToolMaterial("steel", 3, 500, 7F, 2.5F, 12);
+    public static ItemArmor.ArmorMaterial steelarmor = EnumHelper.addArmorMaterial("steel", "mer:steel", 25, new int[]{6, 4, 4, 4}, 8, null, 1.5F);
 
     public static Item trumpsword;
     public static Item trumpaxe;
@@ -32,6 +34,17 @@ public class ModItems {
     public static Item butteredtoast;
     public static Item dough;
     public static Item perogie;
+    public static Item steelingot;
+    public static Item steelpowder;
+    public static Item steelsword;
+    public static Item steelaxe;
+    public static Item steelhoe;
+    public static Item steelpickaxe;
+    public static Item steelspade;
+    public static Item steelhelmet;
+    public static Item steelleggings;
+    public static Item steelboots;
+    public static Item steelchestplate;
 
     public static void init() {
         trumpsword = new ItemTrumpSword(trumptool);
@@ -50,6 +63,17 @@ public class ModItems {
         butteredtoast = new ItemButteredToast();
         dough = new ItemDough();
         perogie = new ItemPerogie();
+        steelingot = new ItemSteelIngot();
+        steelpowder = new ItemSteelPowder();
+        steelsword = new ItemSteelSword(steeltool);
+        steelaxe = new ItemSteelAxe(steeltool);
+        steelpickaxe = new ItemSteelPickaxe(steeltool);
+        steelhoe = new ItemSteelHow(steeltool);
+        steelspade = new ItemSteelSpade(steeltool);
+        steelhelmet = new ItemSteelHelmet(steelarmor, 1, EntityEquipmentSlot.HEAD);
+        steelboots = new ItemSteelBoots(steelarmor, 1, EntityEquipmentSlot.FEET);
+        steelchestplate = new ItemSteelChestplate(steelarmor, 1, EntityEquipmentSlot.CHEST);
+        steelleggings = new ItemSteelLeggings(steelarmor, 2, EntityEquipmentSlot.LEGS);
     }
     public static void register() {
 
@@ -71,6 +95,15 @@ public class ModItems {
         GameRegistry.register(butteredtoast);
         GameRegistry.register(dough);
         GameRegistry.register(perogie);
+        GameRegistry.register(steelhelmet);
+        GameRegistry.register(steelleggings);
+        GameRegistry.register(steelchestplate);
+        GameRegistry.register(steelboots);
+        GameRegistry.register(steelspade);
+        GameRegistry.register(steelpickaxe);
+        GameRegistry.register(steelaxe);
+        GameRegistry.register(steelhoe);
+        GameRegistry.register(steelsword);
     }
 
     public static void registerRenders() {
@@ -93,6 +126,15 @@ public class ModItems {
         registerRender(butteredtoast);
         registerRender(dough);
         registerRender(perogie);
+        registerRender(steelhelmet);
+        registerRender(steelleggings);
+        registerRender(steelchestplate);
+        registerRender(steelboots);
+        registerRender(steelspade);
+        registerRender(steelpickaxe);
+        registerRender(steelaxe);
+        registerRender(steelhoe);
+        registerRender(steelsword);
     }
 
 

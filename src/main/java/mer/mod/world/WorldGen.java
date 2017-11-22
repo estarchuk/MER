@@ -22,7 +22,7 @@ public class WorldGen implements IWorldGenerator {
     private WorldGenerator gen_salt;
 
     public WorldGen() {
-        this.gen_trumpium_ore = new WorldGenMinable(ModBlocks.trumpiumore.getDefaultState(), 3);
+        this.gen_trumpium_ore = new WorldGenMinable(ModBlocks.trumpiumore.getDefaultState(), 6);
         this.gen_salt = new WorldGenMinable(ModBlocks.salt.getDefaultState(), 12);
     }
     //The block count is how many blocks will spawn together in a group. The lower the number, the rarer the block.

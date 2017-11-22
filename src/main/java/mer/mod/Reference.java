@@ -77,7 +77,18 @@ public class Reference {
         TOAST("toast", "itemtoast"),
         BUTTEREDTOAST("butteredtoast", "itembutteredtoast"),
         DOUGH("dough", "itemdough"),
-        PEROGIE("perogie", "itemperogie");
+        PEROGIE("perogie", "itemperogie"),
+        STEELSWORD("steelsword", "itemsteelsword"),
+        STEELAXE("steelaxe", "itemsteelaxe"),
+        STEELHOE("steelhoe", "itemsteelhoe"),
+        STEELSPADE("steelspade", "itemsteelspade"),
+        STEELHELMET("steelhelmet", "itemsteelhelmet"),
+        STEELCHESTPLATE("steelchestplate", "itemsteelchestplate"),
+        STEELLEGGINGS("steelleggings", "itemsteelleggings"),
+        STEELBOOTS("steelboots", "itemsteelboots"),
+        STEELPOWDER("steelpowder", "itemsteelpowder"),
+        STEELPICKAXE("steelpickaxe", "itemsteelpickaxe"),
+        STEELINGOT("steelingot", "itemsteelingot");
 
         private String unlocalizedName;
         private String registryName;
