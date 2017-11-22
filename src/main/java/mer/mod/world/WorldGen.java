@@ -19,9 +19,11 @@ public class WorldGen implements IWorldGenerator {
      */
 
     private WorldGenerator gen_trumpium_ore;
+    private WorldGenerator gen_salt;
 
     public WorldGen() {
-        this.gen_trumpium_ore = new WorldGenMinable(ModBlocks.trumpiumore.getDefaultState(), 8);
+        this.gen_trumpium_ore = new WorldGenMinable(ModBlocks.trumpiumore.getDefaultState(), 3);
+        this.gen_salt = new WorldGenMinable(ModBlocks.salt.getDefaultState(), 12);
     }
     //The block count is how many blocks will spawn together in a group. The lower the number, the rarer the block.
 
@@ -39,11 +41,13 @@ public class WorldGen implements IWorldGenerator {
     }
 
     @Override
+    //This is where one tells the blocks in which dimension to spawn. Currently, only Overworld works for us
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
                          IChunkProvider chunkProvider) {
         switch (world.provider.getDimension()) {
             case 0: //Overworld
                 this.runGenerator(this.gen_trumpium_ore, world, random, chunkX, chunkZ, 8, 0, 64);
+                this.runGenerator(this.gen_salt, world, random, chunkX, chunkZ, 16, 0, 128);
                 //The max height in this "runGenerator" bit must be within the max and minimum height setup above
                 break;
             case -1: //Nether
