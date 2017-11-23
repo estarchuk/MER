@@ -13,5 +13,6 @@ public class ModSmelting {
 
     public static void register() {
         GameRegistry.addSmelting(Items.BREAD, new ItemStack(ModItems.toast), 4);
+        GameRegistry.addSmelting(ModItems.steelpowder, new ItemStack(ModItems.steelingot), 15);
     }
 }

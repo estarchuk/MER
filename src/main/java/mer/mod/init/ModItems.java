@@ -104,6 +104,8 @@ public class ModItems {
         GameRegistry.register(steelaxe);
         GameRegistry.register(steelhoe);
         GameRegistry.register(steelsword);
+        GameRegistry.register(steelpowder);
+        GameRegistry.register(steelingot);
     }
 
     public static void registerRenders() {
@@ -135,6 +137,8 @@ public class ModItems {
         registerRender(steelaxe);
         registerRender(steelhoe);
         registerRender(steelsword);
+        registerRender(steelpowder);
+        registerRender(steelingot);
     }
 
 
