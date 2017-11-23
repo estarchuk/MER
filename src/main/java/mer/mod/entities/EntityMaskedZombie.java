@@ -48,11 +48,12 @@ public class EntityMaskedZombie extends EntityMob {
         this.getDataManager().register(ARMS_RAISED, Boolean.valueOf(false));
     }
 
+    //This above bit initiates the entity, bringing it too life (as long as it is initiated in the proxy)
 
     @Override
     protected void applyEntityAttributes() {
-        super.applyEntityAttributes();
         // Here we set various attributes for our mob. Like maximum health, armor, speed, ...
+        super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.13D);
@@ -61,6 +62,7 @@ public class EntityMaskedZombie extends EntityMob {
     }
 
     public void setArmsRaised(boolean armsRaised) {
+        //This sets the ARMS_RAISED boolean for this specific mob
         this.getDataManager().set(ARMS_RAISED, Boolean.valueOf(armsRaised));
     }
 
@@ -96,6 +98,7 @@ public class EntityMaskedZombie extends EntityMob {
     protected ResourceLocation getLootTable() {
         return LOOT;
     }
+    //This points to the loot table for the "ModEntities.java" class to use when initiating the mob
 
     @Override
     protected boolean isValidLightLevel() {
@@ -106,6 +109,7 @@ public class EntityMaskedZombie extends EntityMob {
     public int getMaxSpawnedInChunk() {
         return 5;
     }
+    //This sets how many mobs can spawn per "chunk" (16 x 16 x 256 blocks)
 
 
 

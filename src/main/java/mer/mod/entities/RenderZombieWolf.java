@@ -9,6 +9,10 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 
 import javax.annotation.Nonnull;
 
+//Here is where the entities models are defined and some boundaries are defined
+//like model width, size, shadow, etc. Normally extends an already existing mob model
+//in Minecraft
+
 public class RenderZombieWolf extends RenderLiving<EntityZombieWolf> {
 
     private ResourceLocation mobTexture = new ResourceLocation("mer:textures/entity/zombiewolf.png");

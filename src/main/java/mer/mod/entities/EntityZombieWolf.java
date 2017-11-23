@@ -14,7 +14,15 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
+
 public class EntityZombieWolf extends EntityWolf {
+        /*
+    Here is one of the main attractions: a new mob in Minecraft. This mob was one that we made on our own, using nothing
+    but human intuition and the tutorial mob as reference. And hey, it works! This one has a broken model but we could not,
+    despite valiant efforts, find a fix for it. But that's ok. It's a feature now.
+     */
+
 
     public static final ResourceLocation LOOT = new ResourceLocation("mer:entities/zombiewolf");
 
@@ -22,10 +30,15 @@ public class EntityZombieWolf extends EntityWolf {
         super(worldin);
     }
 
+    //This decides how big the mob will be when it spawns in, and that it will spawn in the same world as the player
+
     @Override
     protected void entityInit(){
         super.entityInit();
     }
+
+    // This above bit initiates the entity, bringing it too life (as long as it is initiated in the proxy)
+
 
     @Override
     protected void applyEntityAttributes() {
@@ -38,6 +51,7 @@ public class EntityZombieWolf extends EntityWolf {
 
     @Override
     protected void initEntityAI() {
+        //This sets up the mobs AI, such as how it will wander around, swim, attack, etc.
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(7, new EntityAIWanderAvoidWater(this, 1.0D));
         this.tasks.addTask(1, new EntityAIZombieWolfAttack(this, 1.0D, false));
@@ -47,10 +61,25 @@ public class EntityZombieWolf extends EntityWolf {
     }
 
     private void applyEntityAI() {
+        //This bit sets up what the mob will attack and how it will react when attacked.
         this.tasks.addTask(6, new EntityAIMoveThroughVillage(this, 1.0D, false));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
         this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityVillager.class, true));
         this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntitySheep.class, true));
     }
+
+    @Override
+    @Nullable
+    protected ResourceLocation getLootTable() {
+        return LOOT;
+    }
+    //This points to the loot table for the "ModEntities.java" class to use when initiating the mob
+
+
+    @Override
+    public int getMaxSpawnedInChunk() {
+        return 8;
+    }
+    //This sets how many mobs can spawn per "chunk" (16 x 16 x 256 blocks)
 
 }
