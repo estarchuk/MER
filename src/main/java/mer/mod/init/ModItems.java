@@ -66,9 +66,9 @@ public class ModItems {
         steelingot = new ItemSteelIngot();
         steelpowder = new ItemSteelPowder();
         steelsword = new ItemSteelSword(steeltool);
-        steelaxe = new ItemSteelAxe(steeltool);
+        steelaxe = new ItemSteelAxe(steeltool, 7, 1.0F);
         steelpickaxe = new ItemSteelPickaxe(steeltool);
-        steelhoe = new ItemSteelHow(steeltool);
+        steelhoe = new ItemSteelHoe(steeltool);
         steelspade = new ItemSteelSpade(steeltool);
         steelhelmet = new ItemSteelHelmet(steelarmor, 1, EntityEquipmentSlot.HEAD);
         steelboots = new ItemSteelBoots(steelarmor, 1, EntityEquipmentSlot.FEET);
