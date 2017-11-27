@@ -24,7 +24,7 @@ public class ModEntities {
         LootTableList.register(EntityMaskedZombie.LOOT);
         //
         EntityRegistry.registerModEntity(new ResourceLocation("mer:trump"), EntityTrump.class, Reference.ModEntities.TRUMP.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
-        EntityRegistry.addSpawn(EntityTrump.class, 1, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
+        EntityRegistry.addSpawn(EntityTrump.class, 50, 1, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS, Biomes.JUNGLE);
         LootTableList.register(EntityTrump.LOOT);
         //
         EntityRegistry.registerModEntity(new ResourceLocation("mer:zombiewolf"), EntityZombieWolf.class, Reference.ModEntities.ZOMBIEWOLF.getUnlocalizedName(), id++, MER.instance, 64, 3, true);
